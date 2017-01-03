@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Student Name: Yash Tawade   
+     Student ID : 1001397609
+-->
+<html lang="en">
+  <head>
+    <title>A Weather Web Application</title>
+    <h1>A Weather Web Application (Project 1)</h1>
+    <p><strong>Enter the name of a city and we will provide you with weather details alongwith an alert message based on the current weather</strong></p>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="weather.js"></script>
+    <style>
+h1 {
+    font-size: 250%;
+    color:white;
+}
+div{
+  color:white;
+}
+p {
+    font-size: 120%;
+    color:white;
+}
+label
+{
+  font-size: 110%;
+  color:white;
+}
+body  
+{
+    color : #000000;
+    background-image: url("http://ayay.co.uk/backgrounds/weather/clouds/blue-sea-horizon.jpg");
+}
+#carry {
+    font-size: 120%;
+}
+#message, #messageh {
+  font-size: 120%;
+  font-weight: bold;
+}
+</style>
+
+  </head>
+  <body onload="initialize();">
+    <form>
+       <label><strong>City: </strong><input type="text" id="form-input"/></label>
+       <input type="button" onclick="sendRequest();" value="Display Info"/>
+    </form>
+    <br>
+    <div id = "carry">&nbsp;&nbsp;</div><br>
+    <div id="cityname">&nbsp;</div>
+    <div id="latitude">&nbsp;</div>
+    <div id="longitude">&nbsp;</div>
+    <div id="sunrise">&nbsp;</div>
+    <div id="sunset">&nbsp;</div>
+    <div id="humidity">&nbsp;</div>
+    <div id="pressure">&nbsp;</div>
+    <div id="temp">&nbsp;</div>
+    <div id="mintemp">&nbsp;</div>
+    <div id="maxtemp">&nbsp;</div>
+    <div id="clouds">&nbsp;</div>
+    <div id="visibility">&nbsp;</div>
+    <br>   
+    <div id="message">&nbsp; </div>
+    <div id="messageh">&nbsp;</div>
+
+    
+  </body>
+</html>

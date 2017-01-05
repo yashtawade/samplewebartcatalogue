@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<!-- 
+    Student Name: Tawade, Yash
+    UTA ID : 1001397609
+    Project #2
+    Due Date: 24th October
+-->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display Address with Weather Details</title>
+    <meta charset="utf-8"/>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Basic CSS  -->
+<style>
+body{
+  background-color: #2f2c2c;
+}
+
+h5, #output, #ins {
+  color : #FFFFFF;
+}
+</style>
+
+
+    <script type="text/javascript" src="webmash.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMpdu5atwEbXyCpwpgUfSKcTcy6yWuKLQ" type="text/javascript"></script>
+  </head>
+
+
+  <body onload="initialize();">
+  <h5 align = "center"> Click on any location on the map to recieve the Address, Temperature, Wind Speed and Clouds of that particular location</h5>
+  
+  <!--MAP AREA with basic bootstrap functionality-->
+  <div class = "container">
+    <div class="row">
+    <div class="col-lg-1">
+    <div id="map" style="width: 700px; height: 500px;"></div></div></div></div><br/>
+    
+
+    <!--CLEAR BUTTON with basic bootstrap functionality-->
+    <div class = "container">
+    <div class="row">
+    <div class="col-lg-1 ">
+    <div id = "ins" align = "center"> Click the clear button to erase all previous details </div><br/>
+    <button class = "btn btn-block btn-danger" id="butn" type = "button" onClick="clear1();"><i class="fa fa-trash"> Clear</i></button></div></div></div>
+    
+    <!--TEXT AREA with basic bootstrap functionality-->
+    <div class = "container">
+    <div class="row">
+    <div class="col-lg-1">
+    <div id="output">&nbsp;</div></div></div></div>
+    
+    <!--Code for Bootstrap functionality paired with jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
+

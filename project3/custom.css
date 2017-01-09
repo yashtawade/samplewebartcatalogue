@@ -1,0 +1,22 @@
+﻿
+#pad, #pad1{ 
+  padding-left: 60px;
+  }
+  
+  .jumbotron {
+background-color:white !important;
+} 
+
+.pad1, .pad{
+  padding-left: 60px;
+}
+
+#myA{
+  padding-left: 60px;
+}
+
+.my-block {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
